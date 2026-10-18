@@ -27,9 +27,26 @@ O painel serve para olhar e agir rápido. O trabalho completo fica na TUI.
 - ligar notas entre si;
 - importar e exportar.
 
+## Armazenamento
+
+Os dados ficam só neste computador, por enquanto. As pastas seguem as regras de "Pastas e dados" no [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md).
+
+- **Arquivos Markdown:** cada nota é um arquivo, numa pasta visível. O padrão é `~/Documentos/Notas`, configurável. As subpastas são a organização.
+- **Metadados:** a nota fixada, as etiquetas e a data de criação ficam num bloco YAML pequeno no topo do arquivo (front matter).
+- **Links e tarefas:** os links entre notas usam `[[nome da nota]]`. As caixas de seleção usam `- [ ]` e `- [x]`, que é o que o painel marca.
+- **Índice de busca:** um SQLite em `~/.cache/lucerna/notes/`, só para buscar. Os arquivos são sempre a verdade: se o índice sumir ou corromper, o serviço o refaz.
+- **Edição por fora:** o serviço observa a pasta, então uma edição feita fora (Neovim, VS Code) aparece na hora no painel e na TUI.
+
+**Motivos:**
+
+- sem o Lucerna, as notas continuam sendo arquivos que qualquer programa abre;
+- dá para fazer backup com git ou cópia;
+- uma sincronização futura (Syncthing ou git) não exige mudar o app.
+
+## Futuro
+
+- A sincronização entre aparelhos.
+
 ## Em aberto
 
-- O formato das notas (Markdown?).
-- A organização.
-- A busca.
-- A sincronização.
+Nada por enquanto.
