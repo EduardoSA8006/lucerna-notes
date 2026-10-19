@@ -2,7 +2,7 @@
 
 O `lucerna-notes` é um bloco de notas em Rust. Funciona sozinho, com uma TUI, e ganha um painel no Lucerna.
 
-Segue a estrutura de apps do [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md): núcleo, serviço, TUI e painel em QML.
+Segue a estrutura de apps do [ecossistema](https://github.com/lucerna-desktop/lucerna-sdk/blob/main/docs/ecossistema.md): núcleo, serviço, TUI e painel em QML.
 
 ## Serviço
 
@@ -29,7 +29,7 @@ O painel serve para olhar e agir rápido. O trabalho completo fica na TUI.
 
 ## Armazenamento
 
-Os dados ficam só neste computador, por enquanto. As pastas seguem as regras de "Pastas e dados" no [ecossistema](https://github.com/EduardoSA8006/lucerna-sdk/blob/main/docs/ecossistema.md).
+Os dados ficam só neste computador, por enquanto. As pastas seguem as regras de "Pastas e dados" no [ecossistema](https://github.com/lucerna-desktop/lucerna-sdk/blob/main/docs/ecossistema.md).
 
 - **Arquivos Markdown:** cada nota é um arquivo, numa pasta visível. O padrão é `~/Documentos/Notas`, configurável. As subpastas são a organização.
 - **Metadados:** a nota fixada, as etiquetas e a data de criação ficam num bloco YAML pequeno no topo do arquivo (front matter).
