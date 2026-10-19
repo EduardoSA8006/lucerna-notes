@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/assets/logo.svg" alt="Lucerna" height="120"></p>
+
 # lucerna-notes
 
 Bloco de notas em Rust, com TUI e painel no Lucerna.
